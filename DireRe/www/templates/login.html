@@ -1,0 +1,46 @@
+﻿<!--
+  This template loads for the 'tab.friend-detail' state (app.js)
+  'friend' is a $scope variable created in the FriendsCtrl controller (controllers.js)
+  The FriendsCtrl pulls data from the Friends service (service.js)
+  The Friends service returns an array of friend data
+-->
+<ion-view view-title="Login">
+    <ion-content>
+
+        <img src="img/ionic.png" class="imgMiddle" style="margin-top:10%;">
+
+        <b><h1 style="text-align:center;color:steelblue" class="name">Dire<span style="color:mediumvioletred">RE</span></h1></b>
+
+        <div class="list list-inset">
+            <label class="item item-input">
+                <i class="icon ion-android-person"></i>&nbsp; <input type="text" placeholder="Account">
+            </label>
+            <label class="item item-input">
+                <i class="icon ion-android-lock"></i> &nbsp;<input type="password" placeholder="Password">
+            </label>
+        </div>
+
+
+        <h4 style="text-align:center;margin-top:3%;margin-bottom:3%" class="slogan"> <b>REcap The Life You Loved. </b></h4>
+
+        <ul class="buttonMiddle list">
+
+            <li class="item item-checkbox">
+                <label class="checkbox">
+                    <input type="checkbox">
+                </label>
+                Remember Me
+            </li>
+        </ul>
+
+        <div class="buttonMiddle">
+            <button class=" button button-stable button-block" ng-click="login()">
+                <i class="icon ion-ios-paperplane-outline"></i> Login
+            </button>
+
+            <button class=" button button-stable button-block" ng-click="register()">
+                <i class="icon ion-android-navigate"></i> Sign Up
+            </button>
+        </div>
+    </ion-content>
+</ion-view>
